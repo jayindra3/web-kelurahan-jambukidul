@@ -8,16 +8,6 @@ gold = #d4af37
         width: 100% !important;
     }
 }
-@media (max-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-/* Gambar responsif */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 * {
     margin: 0;
     padding: 0;

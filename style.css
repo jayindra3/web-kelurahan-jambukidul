@@ -3,6 +3,11 @@ navy = #1b2a47
 gray = #708090
 gold = #d4af37
 */
+@media (max-width: 768px) {
+    div {
+        width: 100% !important;
+    }
+}
 * {
     margin: 0;
     padding: 0;

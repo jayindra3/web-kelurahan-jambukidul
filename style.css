@@ -8,6 +8,22 @@ gold = #d4af37
         width: 100% !important;
     }
 }
+/* Teks fleksibel */
+html {
+  font-size: 16px; /* standar mobile */
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px; /* sedikit lebih besar di layar lebar */
+  }
+}
+
+/* Gambar responsif */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 * {
     margin: 0;
     padding: 0;

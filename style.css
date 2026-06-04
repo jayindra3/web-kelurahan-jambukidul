@@ -75,7 +75,7 @@ gold = #d4af37
     text-decoration: underline;
 }
 .home {
-    background-image: url(/assets/background-home.jpg);
+    background-image: url(background-home.jpg);
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;

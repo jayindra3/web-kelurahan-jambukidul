@@ -4,33 +4,33 @@ gray = #708090
 gold = #d4af37
 */
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 .main {
     align-items: center;
     text-align: center;
     margin: auto;
-    color: #1b2a47;
     background-color: #eeeeee;
+    color: #1b2a47;
 }
 .header {
-    background-color: #222;
     padding: 10px;
+    background-color: #222;
 }
 .header-decor {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
     width: 510px;
     height: 30px;
-    background-color: #1b2a47;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    margin: auto;
-    text-align: center;
-    color: #d4af37;
     padding: 15px;
+    margin: auto;
+    background-color: #1b2a47;
     border: 2px solid #708090;
     border-radius: 30px;
+    color: #d4af37;
 }
 .header-logo {
     width: 45px;
@@ -40,32 +40,38 @@ gold = #d4af37
 .nav {
     z-index: 10;
     overflow: hidden;
-    background-color: #1b2a47;
     position: sticky;
-    top: 0%;
+    top: 0;
     width: 100%;
+    background-color: #1b2a47;
     box-shadow: 0px 2px #708090;
 }
-.nav-logo {
-    width: 45px;
-    height: 45px;
-    margin: 10px;
+.nav-identity {
     float: left;
 }
-.nav-text {
-    color: white;
-    float: left;
-    text-align: left;
-}
-.nav ul li {
-    list-style-type: none;
+.nav-pages {
     float: right;
 }
-.nav ul li a {
-    display: block;
+.nav-logo {
+    float: left;
+    width: 36px;
+    height: 45px;
+    margin: 10px;
+}
+.nav-text {
+    float: left;
+    text-align: left;
     color: white;
-    padding: 24px 32px;
+}
+.nav ul li {
+    float: right;
+    list-style-type: none;
+}
+.nav ul li a {
+    display: flex;
+    padding: 24px 24px;
     text-decoration: none;
+    color: white;
 }
 .nav ul li a:hover:not(.active) {
     background-color: #111111;
@@ -75,68 +81,62 @@ gold = #d4af37
     text-decoration: underline;
 }
 .home {
-    background-image: url(background-home.jpg);
+    z-index: 1;
+    text-align: center;
+    background-image: url(/assets/background-home.jpg);
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: (0, 0, 0, 0.6);
-    backdrop-filter: blur(100px);
-    z-index: 1;
-    align-items: center;
-    text-align: center;
-    margin: auto;
 }
 .home-welcome-text {
-    font-family: arial;
+    text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    text-align: center;
+    font-family: 'arial';
     font-size: x-large;
-    color: #d4af37;
     line-height: 1;
+    color: #d4af37;
 }
 .home-umum {
-    margin: auto;
-    margin-bottom: 15px;
-    padding: 10px;
+    width: 310px;
+    padding-bottom: 10px;
     background-color: transparent;
-    width: 300px;
     border: 2px solid #1b2a47;
     border-radius: 25px;
-    justify-content: center;
+}
+.home-umum h4 {
+    margin: 10px;
 }
 .home-umum:hover {
-    margin: auto;
-    margin-bottom: 15px;
-    padding: 10px;
+    width: 310px;
+    padding-bottom: 10px;
     background-color: transparent;
-    width: 300px;
     border: 2px solid #1b2a47;
     border-radius: 25px;
-    justify-content: center;
     transform: translateY(-2px);
 }
 .home-event-button {
+    width: 150px;
+    padding: 10px;
     margin: auto;
     margin-bottom: 15px;
-    padding: 10px;
     background-color: transparent;
-    color: #d4af37;
-    text-decoration: none;
-    width: 150px;
     border: 2px solid #d4af37;
     border-radius: 25px;
+    color: #d4af37;
+    text-decoration: none;
+    font-family: 'Times New Roman';
 }
 .home-event-button:hover {
+    width: 150px;
+    padding: 10px;
     margin: auto;
     margin-bottom: 15px;
-    padding: 10px;
     background-color: transparent;
-    color: #d4af37;
-    text-decoration: none;
-    width: 150px;
     border: 2px solid #d4af37;
     border-radius: 25px;
+    color: #d4af37;
+    text-decoration: none;
     transform: translateY(-2px);
 }
 .title {
@@ -146,112 +146,111 @@ gold = #d4af37
 }
 .profil-information-text {
     width: 465px;
-    margin: auto;
-    padding: 10px;
     text-align: left;
-    color: #1b2a47;
+    padding: 10px;
+    margin: auto;
     background-color: white;
     border: 2px solid #1b2a47;
     border-radius: 10px;
+    color: #1b2a47;
 }
 .profil-bubble {
+    width: 1000px;
+    padding: 10px;
     margin: auto;
     margin-bottom: 15px;
-    padding: 10px;
     background-color: #f9f9f9;
-    width: 1000px;
     border-radius: 25px;
     box-shadow: 0px 3px 5px #708090;
 }
 .profil-bubble:hover {
+    width: 1000px;
+    padding: 10px;
     margin: auto;
     margin-bottom: 15px;
-    padding: 10px;
     background-color: #f9f9f9;
-    width: 1000px;
     border-radius: 25px;
     box-shadow: 0px 3px 5px #708090;
     transform: translateY(-2px);
 }
 .profil-umum {
+    width: 300px;
+    padding: 10px;
     margin: auto;
     margin-bottom: 15px;
-    padding: 10px;
     background-color: #f9f9f9;
-    width: 300px;
     border-radius: 25px;
     box-shadow: 0px 3px 5px #708090;
 }
 .profil-umum:hover {
+    width: 300px;
+    padding: 10px;
     margin: auto;
     margin-bottom: 15px;
-    padding: 10px;
     background-color: #f9f9f9;
-    width: 300px;
     border-radius: 25px;
     box-shadow: 0px 3px 5px #708090;
-    justify-content: center;
     transform: translateY(-2px);
 }
 .profil-sejarah1 {
+    justify-content: center;
+    width: 450px;
+    padding: 10px;
     margin: auto;
     margin-bottom: 15px;
-    padding: 10px;
     background-color: #f9f9f9;
-    width: 450px;
     border-radius: 25px;
     box-shadow: 0px 3px 5px #708090;
-    justify-content: center;
 }
 .profil-sejarah1:hover {
+    justify-content: center;
+    width: 450px;
+    padding: 10px;
     margin: auto;
     margin-bottom: 15px;
-    padding: 10px;
     background-color: #f9f9f9;
-    width: 450px;
     border-radius: 25px;
     box-shadow: 0px 3px 5px #708090;
-    justify-content: center;
     transform: translateY(-2px);
 }
 .profil-sejarah2 {
+    justify-content: center;
+    width: 500px;
+    padding: 10px;
     margin: auto;
     margin-bottom: 15px;
-    padding: 10px;
     background-color: #f9f9f9;
-    width: 500px;
     border-radius: 25px;
     box-shadow: 0px 3px 5px #708090;
-    justify-content: center;
 }
 .profil-sejarah2:hover {
+    justify-content: center;
+    width: 500px;
+    padding: 10px;
     margin: auto;
     margin-bottom: 15px;
-    padding: 10px;
     background-color: #f9f9f9;
-    width: 500px;
     border-radius: 25px;
     box-shadow: 0px 3px 5px #708090;
-    justify-content: center;
     transform: translateY(-2px);
 }
 .profil-peta {
+    width: 250px;
+    padding: 20px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 15px;
-    padding: 20px;
     background-color: #f9f9f9;
-    width: 250px;
     border-radius: 25px;
     box-shadow: 0px 3px 5px #708090;
 }
 .profil-peta:hover {
+    width: 250px;
+    padding: 20px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 15px;
-    padding: 20px;
     background-color: #f9f9f9;
-    width: 250px;
     border-radius: 25px;
     box-shadow: 0px 3px 5px #708090;
     transform: translateY(-2px);
@@ -260,7 +259,7 @@ gold = #d4af37
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 20px 0px;
+    padding: 15px 0px;
 }
 .galeri-foto {
     width: 360px;
@@ -279,45 +278,45 @@ gold = #d4af37
     
 }
 .unduhan-gambar {
-    margin: auto;
-    margin-bottom: 5px;
     width: 240px;
     height: 360px;
+    margin: auto;
+    margin-bottom: 5px;
     border: 2px solid #d4af37;
     border-radius: 5px;
 }
 .unduhan-gambar:hover {
-    margin: auto;
-    margin-bottom: 5px;
     width: 240px;
     height: 360px;
+    margin: auto;
+    margin-bottom: 5px;
     border: 2px solid #d4af37;
     border-radius: 5px;
     transform: translateY(-2px);
 }
 .unduhan-button {
+    width: 150px;
+    padding: 10px;
     margin: auto;
     margin-top: 5px;
     margin-bottom: 15px;
-    padding: 10px;
     background-color: #1b2a47;
-    color: #d4af37;
-    width: 150px;
     border: 2px solid #d4af37;
     border-radius: 25px;
     box-shadow: 0px 3px 5px #708090;
+    color: #d4af37;
 }
 .unduhan-button:hover {
+    width: 150px;
+    padding: 10px;
     margin: auto;
     margin-top: 5px;
     margin-bottom: 15px;
-    padding: 10px;
     background-color: #1b2a47;
-    color: #d4af37;
-    width: 150px;
     border: 2px solid #d4af37;
     border-radius: 25px;
     box-shadow: 0px 3px 5px #708090;
+    color: #d4af37;
     transform: translateY(-2px);
 }
 .unduhan-logo {
@@ -332,20 +331,25 @@ gold = #d4af37
     transform: translateY(-2px);
 }
 .footer {
-    background-color: #1b2a47;
-    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
     margin: auto;
-    display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
+    gap: 150px;
+    background-color: #1b2a47;
     box-shadow: 0px -2px #708090;
+    color: white;
 }
 .footer-logo {
-    width: 100px;
-    height: 125px;
-    padding: 10px 20px;
+    width: 80px;
+    height: 100px;
 }
 .footer-icon {
     width: 15px;
     height: 15px;
     padding-right: 8px;
+}
+.footer-qr {
+    width: 100px;
+    height: 100px;
 }

@@ -33,8 +33,8 @@ gold = #d4af37
     color: #d4af37;
 }
 .header-logo {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 50px;
     padding: 0px 10px;
 }
 .nav {
@@ -49,9 +49,6 @@ gold = #d4af37
 .nav-identity {
     float: left;
 }
-.nav-pages {
-    float: right;
-}
 .nav-logo {
     float: left;
     width: 36px;
@@ -62,6 +59,9 @@ gold = #d4af37
     float: left;
     text-align: left;
     color: white;
+}
+.nav-pages {
+    float: right;
 }
 .nav ul li {
     float: right;
@@ -83,8 +83,13 @@ gold = #d4af37
 .home {
     z-index: 1;
     text-align: center;
-    background-image: url(assets/background-home.jpg);
-    background-position: left top;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0)
+        ),
+        url("assets/background-home.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -105,7 +110,7 @@ gold = #d4af37
     border-radius: 25px;
 }
 .home-umum h4 {
-    margin: 10px;
+    margin: 5px;
 }
 .home-umum:hover {
     width: 310px;
@@ -333,9 +338,9 @@ gold = #d4af37
 .footer {
     display: flex;
     justify-content: center;
-    padding-top: 15px;
+    padding: 10px 100px 0px 100px;
     margin: auto;
-    gap: 150px;
+    gap: 90px;
     background-color: #1b2a47;
     box-shadow: 0px -2px #708090;
     color: white;
@@ -350,6 +355,53 @@ gold = #d4af37
     padding-right: 8px;
 }
 .footer-qr {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+}
+@media (max-width: 767px) {
+    * h1 {font-size: 1.5rem;}
+    * h2 {font-size: 1.17rem;}
+    * h3 {font-size: 1rem;}
+    * h4 {font-size: 0.83rem;}
+    * h5 {font-size: 0.67rem;}
+    * p {font-size: 0.83rem;}
+    .header-decor {        
+        width: 300px;
+        height: 30px;
+        padding: 15px;
+        margin: auto;
+    }
+    .nav {
+        display: block;
+        top: 0;
+        justify-content: center;
+    }
+    .nav-identity {
+        float: none;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-logo {
+        width: 30px;
+        height: 30px;
+    }
+    .nav ul li a {
+        padding: 12px 23.2px;
+    }
+    .home {
+        background-size: 650px 912px;
+    }
+    .footer {
+        display: block;
+        justify-content: center;
+        padding: 5px 10px 5px 10px;
+    }  
+    .footer ul li {
+        list-style-type: none;
+    }
+    .footer-element {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
 }

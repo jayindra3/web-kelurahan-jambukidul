@@ -85,7 +85,7 @@ gold = #d4af37
     text-align: center;
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.2),
             rgba(0, 0, 0, 0)
         ),
         url("assets/background-home.jpg");

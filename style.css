@@ -283,10 +283,10 @@ gold = #d4af37
     .nav ul li a {padding: 12px 23.2px;}
     .home {background-size: 630px 930px;}
     .profil-umum {
-        width: 85px;
+        width: 100px;
         height: 130px;
         margin: auto;
-        margin: 15px;
+        margin: 10px;
     }
     .profil-umum:hover {transform: translateY(-2px);}
     .profil-visimisi {
@@ -295,9 +295,10 @@ gold = #d4af37
     }
     .profil-visimisi:hover {transform: translateY(-2px);}
     .profil-sejarah {
-        width: 110px;
-        height: 470px;
+        width: 120px;
+        height: 600px;
         padding: 15px;
+        margin: 10px;
     }
     .profil-struktur {max-width: 90%;}
     .profil-peta {width: 80%;}

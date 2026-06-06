@@ -280,8 +280,13 @@ gold = #d4af37
         width: 30px;
         height: 30px;
     }
-    .nav ul li a {padding: 12px 23.2px;}
-    .home {background-size: 630px 930px;}
+    .nav-pages {
+        float:none;
+        display: flex;
+        justify-content: center;
+    }
+    .nav ul li a {padding: 12px 25px;}
+    .home {background-size: 690px 930px;}
     .profil-umum {
         width: 100px;
         height: 130px;

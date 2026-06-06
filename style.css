@@ -94,6 +94,7 @@ gold = #d4af37
 .home-umum {
     width: 310px;
     padding: 10px;
+    margin: 10px;
     background-color: transparent;
     border: 2px solid #1b2a47;
     border-radius: 25px;
@@ -277,16 +278,16 @@ gold = #d4af37
         justify-content: center;
     }
     .nav-logo {
-        width: 36px;
-        height: 45px;
+        width: 32px;
+        height: 40px;
     }
     .nav-pages {
         float:none;
         display: flex;
         justify-content: center;
     }
-    .nav ul li a {padding: 12px 25.5px;}
-    .home {background-size: 700px 930px;}
+    .nav ul li a {padding: 12px 25.7px;}
+    .home {background-size: 690px 930px;}
     .profil-umum {
         width: 100px;
         height: 130px;

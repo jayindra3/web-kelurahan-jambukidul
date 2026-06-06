@@ -277,16 +277,16 @@ gold = #d4af37
         justify-content: center;
     }
     .nav-logo {
-        width: 30px;
-        height: 30px;
+        width: 36px;
+        height: 45px;
     }
     .nav-pages {
         float:none;
         display: flex;
         justify-content: center;
     }
-    .nav ul li a {padding: 12px 23.5px;}
-    .home {background-size: 690px 930px;}
+    .nav ul li a {padding: 12px 23.9px;}
+    .home {background-size: 720px 930px;}
     .profil-umum {
         width: 100px;
         height: 130px;
